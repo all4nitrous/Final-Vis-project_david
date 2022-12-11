@@ -112,6 +112,14 @@ nav {
     z-index: 11;
 }
 
+/*=====JS for change of navbar=====*/
+.window-scroll {
+    background: #CD7F32;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+}
+
+
+
 .nav_container {
     height: 100%;
     display: flex;
@@ -135,7 +143,7 @@ nav button {
 }
 
 .nav_menu a:hover {
-    color: var(--color-bg2);
+    color: #A95C68;
 }
 
 /*=========Header========*/
@@ -159,6 +167,155 @@ header {
 .header_left p {
     margin: 1rem 0 2.4rem;
 }
+
+/*==========Quotes=========*/
+
+.quotes {
+    background: var(--color-bg1);
+    height: 29rem;
+}
+
+.quotes h1 {
+    line-height: 1;
+    margin-bottom: 3rem;
+}
+
+.quotes_container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.quotes_left {
+    margin-right: 4rem;
+}
+
+.quotes_left p {
+    margin: 1rem 0 3rem;
+}
+
+.quotes_right {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem;
+}
+
+.quote {
+    background: var(--color-bg2);
+    padding: 2rem;
+    border-radius: 2rem;
+    transition: var(--transition);  
+}
+
+.quote:hover {
+    box-shadow: 0 3rem rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.quote:nth-child(1) .quote_icon {
+    background: var(--color-danger);
+}
+.quote:nth-child(2) .quote_icon {
+    background: var(--color-warning);
+}
+
+.quote:nth-child(3) .quote_icon {
+    background: var(--color-success);
+}
+.quote:nth-child(4) .quote_icon {
+    background:blue;
+}
+.quote:nth-child(5) .quote_icon {
+    background: var(--color-warning);
+}
+.quote:nth-child(6) .quote_icon {
+    background: var(--color-success);
+}
+.quote:nth-child(7) .quote_icon {
+    background: blue;
+}
+.quote:nth-child(8) .quote_icon {
+    background: var(--color-danger);
+}
+
+.quote_icon {
+    background: var(--color-primary);
+    padding: 0.7rem;
+    border-radius: 0.9rem;
+}
+
+.quotes h5 {
+    margin: 2rem 0 1rem;
+}
+
+.quotes p {
+    font-size: 0.85rem;
+}
+
+section.reflection {
+    background: var(--color-bg);
+    background-image: url(./xv.png);
+}
+
+section.reflection .container {
+    display: grid;
+    grid-template-columns: 26rem auto;
+    gap: 5rem;
+}
+
+/*======Toggle======*/
+
+.toggle_container {
+    overflow-x: hidden;
+    position: relative;
+    margin-bottom: 5rem;
+}
+
+.toggle {
+    padding-top: 2rem;
+
+}
+
+.avatar {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 1rem;
+    border: 1rem solid var(--color-bg);
+}
+
+.toggle_info {
+    text-align: center;
+
+}
+
+.toggle_body {
+    background: var(--color-primary);
+    padding: 2rem;
+    margin-top: 3rem;
+    position: relative;
+    color: #8B0000;
+}
+
+.toggle_body:before {
+    content: "";
+    display: block;
+    background: linear-gradient(135deg, transparent, var(--color-primary), var(--color-primary), var(--color-primary));
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    left: 50%;
+    top: -1.5rem;
+    transform: rotate(45deg);
+}
+
+
+
+
+
+
+
+
 
 
 
