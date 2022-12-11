@@ -308,10 +308,10 @@ section.reflection .container {
     top: -1.5rem;
     transform: rotate(45deg);
 }
-
-
-
-
+ 
+.swiper-pagination-bullet-active {
+    background-color: yellow !important;
+}
 
 
 

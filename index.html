@@ -15,6 +15,13 @@
         background-image: url(./xv.png);
     }
 </style>
+
+<!--Swiper js styler-->
+<link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
 </head>
 <body>
     <nav>
@@ -115,13 +122,14 @@
         <p><a href="" class="btn btn-primary" download><i class="uil uil-download-alt"></i>   Download Reflection</a></p>
         </div>
     </div>
+</section>
 
 <!--Quotes used in reflections-->
 
-<section class="container toggle_container">
+<section class="container toggle_container mySwiper">
     <h2>Quotes Used in Reflection</h2>
-    <div>
-        <article class="toggle">
+    <div class="swiper-wrapper">
+        <article class="toggle swiper-slide">
             <div class="avatar">
                 <img src="./oro.jpg">
             </div>
@@ -134,7 +142,7 @@
             </div>
         </article>
 
-        <article class="toggle">
+        <article class="toggle swiper-slide">
             <div class="avatar">
                 <img src="./oro.jpg">
             </div>
@@ -147,7 +155,7 @@
             </div>
         </article>
 
-        <article class="toggle">
+        <article class="toggle swiper-slide">
             <div class="avatar">
                 <img src="./oro.jpg">
             </div>
@@ -160,7 +168,7 @@
             </div>
         </article>
 
-        <article class="toggle">
+        <article class="toggle swiper-slide">
             <div class="avatar">
                 <img src="./oro.jpg">
             </div>
@@ -173,7 +181,7 @@
             </div>
         </article>
 
-        <article class="toggle">
+        <article class="toggle swiper-slide">
             <div class="avatar">
                 <img src="./oro.jpg">
             </div>
@@ -186,7 +194,7 @@
             </div>
         </article>
 
-        <article class="toggle">
+        <article class="toggle swiper-slide">
             <div class="avatar">
                 <img src="./oro.jpg">
             </div>
@@ -199,7 +207,7 @@
             </div>
         </article>
 
-        <article class="toggle">
+        <article class="toggle swiper-slide">
             <div class="avatar">
                 <img src="./oro.jpg">
             </div>
@@ -212,7 +220,7 @@
             </div>
         </article>
 
-        <article class="toggle">
+        <article class="toggle swiper-slide">
             <div class="avatar">
                 <img src="./oro.jpg">
             </div>
@@ -225,9 +233,10 @@
             </div>
         </article>
     </div>
+    <div class="swiper-pagination"></div>
+    </div>
 </section>
 
-</section>
 
 
 
@@ -239,7 +248,20 @@
 
 
 
-
+<!--Js scripts-->
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script src="./main.js"></script>
+
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true, bulletClass: `swiper-pagination-bullet swiper-pagination-testClass`,
+      },
+    });
+  </script>
+
+
 </body>
 </html>
