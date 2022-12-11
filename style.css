@@ -423,34 +423,34 @@ nav button#close-menu-btn {
 .nav_menu li {
     width: 100%;
     height: 5.8rem;
-    animation: animateNavItems 700ms linear forwards;
+    animation: animateNavItems 400ms linear forwards;
     transform-origin: top right;
+    opacity: 0;
 }
 
 .nav_menu li:nth-child(2) {
-    animation-delay: 2s;
+    animation-delay: 600ms;
 }
 
-.nav_menu li:nth-child(2) {
-    animation-delay: 2s;
+.nav_menu li:nth-child(3) {
+    animation-delay: 800ms;
 }
-.nav_menu li:nth-child(2) {
-    animation-delay: 2s;
+.nav_menu li:nth-child(4) {
+    animation-delay: 1000ms;
 }
-.nav_menu li:nth-child(2) {
-    animation-delay: 2s;
-}
+
 
 
 
 
 @keyframes animateNavItems {
     0% {
-        transform: rotateZ(-90deg);
+        transform: rotateZ(-90deg) rotateX(-90deg) scale(0.1);
     }
 
     100% {
-        transform: rotateZ(0);
+        transform: rotateZ(0) rotateX(0) scale(1);
+        opacity: 1;
     }
 }
 
@@ -470,14 +470,102 @@ nav button#close-menu-btn {
     color: var(--color-white);
 }
 
+/*=====header====*/
 
+header {
+    height: 52vh;
+    margin-bottom: 4rem;
+}
 
+.header_container {
+    gap: 0;
+    padding-bottom: 3rem;
+}
 
+.quotes {
+    height: auto;
+}
 
+.quotes_container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+}
 
+.quotes_left {
+    margin-right: 0;
+}
 
+.reflection {
+    margin-top: 0;
+}
+
+section.reflection .container {
+    grid-template-columns: 1fr;
+}
 }
    
+/*===========sm mobible========*/
+
+@media screen and (max-width: 600px) {
+   .container {
+    width: var(--container-width-sm);
+   }
+
+/*=======nav sm========*/
+
+.nav_menu {
+    right: 3%;
+}
+
+/*=======header========*/
+
+header {
+    height: 100vh;
+}
+
+.header_container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    margin-top: 0;
+}
+
+.header_left p {
+    margin-bottom: 1.3rem;
+}
+
+.quotes-right {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.7rem;
+}
+
+.quotes {
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.quote_icon {
+    margin-top: 4px;
+    display: inline-block;
+}
+
+section.reflection .container {
+    grid-template-columns: 1fr;
+}
+
+.toggle_body {
+    padding: 1.2rem;
+}
+
+footer {
+    text-align: center;
+    gap: 2rem;
+}
+
+.footer_socials {
+    justify-content: center;
+}
+
+}
 
 
 
