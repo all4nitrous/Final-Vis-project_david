@@ -259,13 +259,36 @@ section.reflection {
     background-image: url(./xv.png);
     margin-top: 10rem;
 }
-
 section.reflection .container {
     display: grid;
     grid-template-columns: 26rem auto;
     gap: 5rem;
-   
+   }
+
+section.reflection .container .show-more-content {
+    display: none;
 }
+
+section.reflection .container .show-more-content.show-content {
+    display: block;
+}
+
+
+
+.read-more{
+    color: yellow;
+}
+
+section.reflection .container .read-more {
+    display: block;
+    cursor: pointer;
+}
+
+.section.about .container .read-more:hover {
+    text-decoration: underline;
+}
+
+
 
 /*======Toggle======*/
 

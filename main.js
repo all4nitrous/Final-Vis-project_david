@@ -24,7 +24,15 @@ const closeNav = () => {
 
 closeBtn.addEventListener('click', closeNav)
 
+const readMoreBtn = document.querySelector('.read-more');
+const readMoreContent = document.querySelector('.show-more-content');
 
+readMoreBtn.addEventListener('click', () => {
+    readMoreContent.classList.toggle('show-content');
+    if(readMoreContent.classList.contains('show-content')){
+        readMoreBtn.textContent = "Show Less";
+    } else {readMoreBtn.textContent = "Show More";}
+})
 
 
 
